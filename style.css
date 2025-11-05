@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 20px;
 }
 
 .pacifico-regular {
@@ -10,28 +11,31 @@
   font-style: normal;
 }
 
+body {
+    display: flex;
+}
+
 
 .sidebar {
     display: flex;
     border: 1px solid red;
-    max-width: 40%;
+    width: 40vw;
     height: 100vh;
-    position: relative;
+    justify-content: flex-start;
     align-items: center;
-}
-
-.bg-img {
-    height: 100%;
-    width: 100%;
+    background-image: url("images/bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .logo {
     display: flex;
-    position: absolute;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .logo-img {
@@ -45,6 +49,20 @@
     font-size: 35px;
     font-family: "Pacifico", cursive;
     position: relative;
-    right: 30px;
+    right: 35px;
     color: #2c6fa3
+}
+
+.form-container {
+    display: flex;
+    border: 1px solid green;
+    align-items: center;
+    width: 60vw;
+    justify-content: center;
+}
+
+legend {
+    max-width: 300px;
+    flex-wrap: wrap;
+    border: 1px solid blue;
 }
